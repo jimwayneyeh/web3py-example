@@ -18,7 +18,7 @@ def main ():
     
     # Web3 accept only checksum address. So we should ensure the given address is a
     # checksum address before accessing the corresponding contract.
-    contract_addr = w3.toChecksumAddress('0x4e470dc7321e84ca96fcaedd0c8abcebbaeb68c6');
+    contract_addr = w3.toChecksumAddress('0x4e470dc7321e84ca96fcaedd0c8abcebbaeb68c6')
     
     erc20_contract = w3.eth.contract(address=contract_addr, abi=erc20_abi)
     
