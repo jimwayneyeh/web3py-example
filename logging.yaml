@@ -10,15 +10,11 @@ handlers:
     formatter: simple
     stream: ext://sys.stdout
 loggers:
-  simpleExample:
-    level: DEBUG
-    handlers: [console]
-    propagate: no
-  botocore:
-    level: ERROR
+  web3:
+    level: INFO
     handlers: [console]
   urllib3:
-    level: ERROR
+    level: INFO
     handlers: [console]
 root:
   level: DEBUG
